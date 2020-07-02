@@ -11,7 +11,6 @@ describe("mathEnforcer object performs operations with numbers and returns a res
             expect(addFive(5)).to.equal(10);
         });
         it("returns correct result when negative number is passed",()=>{
-            let targetResult = 0;
             expect(addFive(-5)).to.equal(0);
         });
         it("returns correct value when floating point number is passed in",()=>{
@@ -45,10 +44,7 @@ describe("mathEnforcer object performs operations with numbers and returns a res
         it("returns the sum of the two numbers",()=>{
             let targetResult = 10;
             let actualResult = sum(5,5);
-            let errorTolerance = 0.01;
-            let actualError = Math.abs(targetResult - actualResult) <= errorTolerance;
-
-            expect(actualError).to.equal(true);
+            expect(actualResult).to.be.closeTo(10,0.001);
         });
         it("returns correct sum of two floating point numbers",()=>{
             expect(sum(2.2, 2.2)).to.be.closeTo(4.4, 0.001);
