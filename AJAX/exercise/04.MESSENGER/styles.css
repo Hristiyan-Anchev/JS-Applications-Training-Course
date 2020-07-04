@@ -14,7 +14,7 @@ input[type=button] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    display: block;
+    display: inline-block;
 }
 input[type=button]:hover {
     background-color: #45a049;
@@ -29,6 +29,47 @@ label {
     display: inline-block;
     width: 5em;
 }
+#prompt{
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+}
+#btnContainer{
+    display: flex;
+    width: 100%;
+    margin:3px;
+    place-content: space-around;
+}
+.msg-window{
+    display:flex;
+    flex-flow:column;
+    justify-content: space-around;
+    text-align: center;
+    overflow: hidden;
+    width:auto;
+    height:auto;
+    padding: 0.5em;
+    margin:0.5em;
+    background-color: dimgray;
+    color: azure;
+    border: 4px  dashed yellow;
+    text-shadow: 1px 1px 2px black;
+    box-shadow: 3px 3px 2px #2d2d2d;
+    box-sizing: border-box;
+
+}
+.buttons{
+    display: flex;
+    /*text-align: center;*/
+    justify-content: space-evenly;
+}
+
+#clear{
+    background-color: #d42e07;
+}
+#clear:hover{
+    background-color: #d9432b;
+}
 #author,
 #content {
     width: 30em;
@@ -37,10 +78,10 @@ label {
     width: 38em;
 }
 #submit, #refresh {
-    display: inline-block;
+    display: block;
 }
 #submit { 
-    margin: 32px;
+    /*margin: 32px;*/
 }
 
 #main{
