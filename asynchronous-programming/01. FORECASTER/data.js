@@ -24,7 +24,7 @@ export async function getCurrentForecast(location) {
     let queryURL = `${baseURL}forecast/today/${locations.get(location)}.json`;
     console.log("Current forecast URL: ", queryURL);
     let response = await fetch(queryURL);
-    if(response.ok){
+    if (response.ok) {
         let data = await response.json();
         return data
     }
@@ -35,7 +35,7 @@ export async function getThreeDayForecast(location) {
     let queryURL = `${baseURL}forecast/upcoming/${locations.get(location)}.json`;
     console.log("Three day forecast URL: ", queryURL);
     let response = await fetch(queryURL);
-    if(response.ok){
+    if (response.ok) {
         let data = await response.json();
         return data
     }
@@ -50,7 +50,7 @@ export async function getForecastFor(location) {
         let current = result[0].forecast;
         let threeDay = result[1].forecast;
         // console.log(locationName);
-        myCache.set(location, {locationName,current, threeDay});
+        myCache.set(location, {locationName, current, threeDay});
         //set cache expiration
         setTimeout(() => {
             myCache = new Map()
@@ -62,6 +62,6 @@ export async function getForecastFor(location) {
 
 }
 
-export function getCacheExpTime(){
-    return cacheExpirationTime*1000;
+export function getCacheExpTime() {
+    return cacheExpirationTime * 1000;
 }

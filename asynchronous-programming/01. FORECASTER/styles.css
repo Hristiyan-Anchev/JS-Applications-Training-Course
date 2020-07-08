@@ -22,11 +22,13 @@ div.forecast-info {
     margin-bottom: 1%;
     padding: 1%;
 }
-.display-name{
+
+.display-name {
 
 
-    display:block;
+    display: block;
 }
+
 #request {
     text-align: center;
 }
