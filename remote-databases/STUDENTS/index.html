@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+<div class="inputWrapper">
+    <div class="container">
+        <label for="first-name-input">First Name:</label>
+        <input type="text" id="first-name-input">
+    </div>
+
+    <div class="container">
+        <label for="last-name-input">Last Name:</label>
+        <input type="text" id="last-name-input">
+    </div>
+    <div class="container">
+        <label for="faculty-number-input">Faculty Number:</label>
+        <input type="text" id="faculty-number-input">
+    </div>
+    <div class="container">
+        <label for="grade-input">Grade:</label>
+        <input type="text" id="grade-input">
+    </div>
+    <div class="container">
+        <button id="submit">
+            Create New
+        </button>
+<!--        <button id="list-all">-->
+<!--            List all students-->
+<!--        </button>-->
+    </div>
+
+</div>
+    <table id="results">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Faculty Number</th>
+                <th>Grade</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
