@@ -1,0 +1,15 @@
+<section class="{{cat}}">
+    <h2>{{cat}}</h2>
+    <div class="articles">
+
+        {{#if hasArticles}}
+            {{#each articles}}
+                {{> article this}}
+            {{/each}}
+        {{else}}
+            <h3 class="no-articles">No articles yet</h3>
+        {{/if}}
+
+
+    </div>
+</section>

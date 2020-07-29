@@ -1,4 +1,4 @@
-let {lookupChar} = require("../CharLookup").lookupChar;
+let {lookupChar} = require("../CharLookup");
 let expect = require("chai").expect;
 
 describe("grabs a char by given index",()=>{

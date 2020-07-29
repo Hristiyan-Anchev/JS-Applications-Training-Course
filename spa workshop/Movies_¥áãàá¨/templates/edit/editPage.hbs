@@ -1,0 +1,22 @@
+{{> header}}
+
+<div id="editMovie">
+    <h1>Edit movie</h1>
+    <form action="#/edit/:{{objectId}}" method="POST">
+        <label for="createTitle">Title</label>
+        <input type="text" name="title" id="createTitle" value="{{title}}">
+        <label for="createImage">Image Url</label>
+        <input type="text" name="movieCover" id="createImage" value="{{movieCover}}">
+        <label for="createDescription">Description</label>
+        <textarea type="text" name="description" id="createDescription" >
+            {{description}}
+        </textarea>
+        <label for="createGenres">Genres</label>
+        <input type="text" name="genre" id="createGenres" value="{{genre}}">
+        <label for="createTickets">Available Tickets</label>
+        <input type="number" name="availableTickets" id="createTickets" value="{{availableTickets}}">
+        <input type="submit" value="Save changes">
+    </form>
+</div>
+
+{{> footer}}

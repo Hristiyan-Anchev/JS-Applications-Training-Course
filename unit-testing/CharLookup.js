@@ -9,4 +9,4 @@ function lookupChar(string, index) {
     return string.charAt(index);
 }
 
-Object.assign(module.exports,{lookupChar});
+Object.assign(module.exports ,{lookupChar})

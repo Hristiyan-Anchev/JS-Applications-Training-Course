@@ -1,3 +1,6 @@
+// The server at the address listed above will respond with valid data
+// for location names "London", "New York" and "Barcelona".
+
 let baseURL = "https://judgetests.firebaseio.com/";
 let locationsURL = baseURL + "locations.json";
 //this value controls the cache's expiration time(in seconds), change this accordingly

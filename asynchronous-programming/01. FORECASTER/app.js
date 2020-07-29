@@ -30,11 +30,10 @@ function attachEvents() {
                 appendForecasts(locationName, current, threeDay);
                 console.log(locationName, current, threeDay);
             } catch (e) {
+                alert("An Error has occured !");
                 console.error(e.message);
             }
         }
-
-
     }
 
 }

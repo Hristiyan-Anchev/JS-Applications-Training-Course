@@ -1,5 +1,5 @@
-import {fetchAllCatches, errorHandlers, fetchNewCatch} from "./data-module.js";
-import * as domManipulator from "./domManipulator.js";
+import {fetchAllCatches, errorHandlers, fetchNewCatch} from "./data.js";
+import * as domManipulator from "./DOM_Manipulator.js";
 
 function attachEvents() {
     domManipulator.domElements.main().textContent = "";
@@ -22,7 +22,6 @@ function attachEvents() {
             })
         }).catch(errorHandlers.handleError);
     });
-
     document.querySelector("button.add").addEventListener("click", () => {
         let angler = domManipulator.domElements.angler().value;
         let weight = domManipulator.domElements.weight().value;
@@ -41,7 +40,6 @@ function attachEvents() {
 
 
     })
-
 
 }
 

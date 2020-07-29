@@ -1,0 +1,12 @@
+{{> header}}
+
+<div id="cinema">
+    <h1>Cinema</h1>
+    <div class="movies">
+        {{# each movies}}
+            {{> film}}
+        {{/each}}
+    </div>
+</div>
+
+{{> footer}}
