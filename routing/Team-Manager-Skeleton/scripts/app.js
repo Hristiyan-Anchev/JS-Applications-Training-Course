@@ -27,7 +27,7 @@ function main() {
     }
 
     let mainTemplates = {
-        home: "../templates/home/home.hbs",
+        home: "../templates/home/header.hbs",
         about: "../templates/about/about.hbs",
         loginPage: "../templates/login/loginPage.hbs",
         registerPage: "../templates/register/registerPage.hbs",

@@ -1,0 +1,15 @@
+{{>header}}
+
+<div style="margin-top:3%; padding-top: 3%;" class="container">
+    {{#if causesExist}}
+        {{#each causes}}
+            {{> causeCard}}
+        {{/each}}
+    {{else}}
+        <h1 class="text-center">NO CAUSES :(</h1>
+
+    {{/if}}
+
+</div>
+
+{{>footer}}

@@ -2,7 +2,7 @@ import * as data from "./data.js";
 
 export async function renderHome() {
 
-    let homePage = "../templates/home.hbs";
+    let homePage = "../templates/header.hbs";
     Object.assign(this.app, window.localStorage);
 
     let posts = await data.readData();

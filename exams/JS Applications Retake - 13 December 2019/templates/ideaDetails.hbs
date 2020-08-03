@@ -10,18 +10,21 @@
         </p>
         <p class="infoType">Comments:</p>
         <ul>
-            {{#each comments}}
-                {{#if commentsCount}}
+            {{#if commentsCount}}
+                {{#each comments}}
                     <li class="comment">{{this}}</li>
-                {{else}}
-                    <li class="comment">No comments yet :(</li>
-                {{/if}}
-            {{/each}}
+                {{/each}}
+            {{else}}
+                <li class="comment">No comments yet :(</li>
+            {{/if}}
         </ul>
     </div>
-    <div class="text-center">
-        <a class="btn detb" href="#/delete-recipe/{{objectId}}">Delete</a>
-    </div>
+    {{#if isCreator}}
+        <div class="text-center">
+            <a class="btn detb" href="#/delete/{{objectId}}">Delete</a>
+        </div>
+    {{/if}}
+
     <form class="text-center" method="post" action="#/comment-idea/{{objectId}}">
         <textarea class="textarea-det" name="newComment" id=""></textarea>
         <button type="submit" class="btn detb" >Comment</button>

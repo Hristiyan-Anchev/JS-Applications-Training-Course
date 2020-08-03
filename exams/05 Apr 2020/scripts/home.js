@@ -1,7 +1,7 @@
 import * as data from "./data.js";
 
 export default async function home(){
-    let homePage = "../templates/home/home.hbs";
+    let homePage = "../templates/home/header.hbs";
     Object.assign(this.app.partials,{
         category:"../templates/category/category.hbs",
         article:"../templates/article/article.hbs"

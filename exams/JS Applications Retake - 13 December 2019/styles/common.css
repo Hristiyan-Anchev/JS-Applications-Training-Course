@@ -42,3 +42,10 @@ nav a{
 nav img{
   height: 3rem;
 }
+
+.alert{
+  position:absolute;
+  top:4rem;
+  width:100%;
+  text-align: center;
+}

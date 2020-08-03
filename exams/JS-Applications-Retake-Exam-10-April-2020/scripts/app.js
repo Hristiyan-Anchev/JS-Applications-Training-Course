@@ -14,7 +14,7 @@ async function main(){
 
         // Object.assign(this,window.localStorage);
         window.localStorage.clear();
-        this.get("/home",controllers.renderHome);
+        this.get("#/home",controllers.renderHome);
         this.get("/",controllers.renderHome);
         this.get("/register",controllers.renderRegister);
         this.get("/login",controllers.renderLogin);
@@ -41,5 +41,5 @@ async function main(){
 
     });
 
-    app.run("/home");
+    app.run("#/home");
 }

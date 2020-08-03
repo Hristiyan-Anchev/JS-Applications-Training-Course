@@ -86,7 +86,7 @@ export async function renderHome(){
     console.log("APP CTX :::",this.app);
 
     Object.assign(this.app,window.localStorage);
-    let homePage = "../templates/home.hbs";
+    let homePage = "../templates/header.hbs";
     this.app.partials.trekCard = "../templates/trekCard.hbs";
 
     //get all treks from db
